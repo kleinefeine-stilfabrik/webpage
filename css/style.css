@@ -1,0 +1,270 @@
+@font-face {
+font-family: "champagne";
+src: url("css/fonts/champagne__limousines-webfont.eot");
+src:
+url("css/fonts/champagne__limousines-webfont.woff") format("woff"),
+url("css/fonts/champagne-_-limousines.otf") format("opentype"),
+url("css/fonts/champagne__limousines-webfont.svg#filename") format("svg");
+}
+
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #d2d2d2;
+}
+.navbar {
+  box-sizing: border-box;
+  padding-top: 0px;
+  background: #b6b6b6;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 5px black solid;
+  //height: 100px;
+  height: 11vh;
+}
+.navbar p {
+  font-family: sans-serif;
+}
+.navbar ul {
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.navbar #logo {
+  transform: scale(0.8);
+  position: absolute;
+  left: -30px;
+  top: -10px;
+}
+.navbar .element {
+  margin: 0px 10px;
+  color: black;
+  padding: 3px 10px;
+  //border: 4px black solid;
+  transition: all 100ms;
+  text-align: center;
+  font-size: 2em;
+}
+.navbar a {
+  text-decoration: none;
+}
+.navbar .element:hover {
+  text-decoration: none;
+  background: black;
+  color: white;
+  padding: 3px 10px;
+  //border: 4px white solid;
+}
+.navbar #activeNav {
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  background: black;
+  color: white;
+  padding: 3px 15px;
+  //border: 4px white solid;
+}
+
+.navbar li {
+  list-style: none;
+  margin-top: 0.65%;
+}
+
+.content {
+  display: flex;
+}
+.content #feather {
+  flex: 1;
+  background-image: url(../img/feather.png);
+  border: 1px gray solid;
+  background-color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  //height: 860px;
+  height: 89vh;
+}
+
+#spruch_home {
+  position: relative;
+  left: 8%;
+  top: 80%;
+  font-size: 1.7em;
+  max-width: 70%;
+}
+
+#spruch_home .author {
+  font-size: 0.7em;
+  text-align: right;
+  line-height: 2em;
+}
+
+#spruch_profil {
+  position: relative;
+  left: 8%;
+  top: 80%;
+  font-size: 1.7em;
+  max-width: 70%;
+}
+
+#spruch_profil .author {
+  font-size: 0.7em;
+  text-align: right;
+  line-height: 2em;
+}
+
+/*
+.content .text {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  border: 1px gray solid;
+  flex: 4;
+}
+
+.content .text ul {
+  position: relative;
+  left: 55%;
+  top: 30%;
+  width: 40%;
+}
+
+.content .text ul li {
+  list-style: none;
+  font-size: 3em;
+  text-align: right;
+}
+.content .text p {
+  font-size: 2.2em;
+  position: relative;
+  top: 40%;
+  text-align: right;
+  margin-right: 4%;
+}
+*/
+
+.content .textbox {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  border: 1px gray solid;
+  flex: 4;
+  l
+}
+
+.content .text {
+  position: relative;
+  width: 90%;
+  right: -9%;
+  bottom: -42%;
+}
+
+.content .text ul {
+  /*
+  position: relative;
+  left: 55%;
+  top: 30%;
+  width: 40%;
+  */
+}
+
+.content .text ul li {
+  list-style: none;
+  font-size: 3em;
+  text-align: right;
+}
+.content .text p {
+  font-size: 2.2em;
+  text-align: right;
+  line-height: 4em;
+  /*
+  position: relative;
+  top: 40%;
+  margin-right: 4%;
+  */
+}
+/*
+.slideimage {
+  background-image: url('../img/slideimage.webp');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  overflow: hidden;
+  height: 1613px;
+  width: 1613px;
+  transition: all 1000ms;
+  position: absolute;
+}
+*/
+
+.slideimages {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  border: 1px gray solid;
+  flex: 4;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+/*
+.content .slideimages {
+
+}
+*/
+
+.slideimage_container {
+  width: 30%;
+  //height: 65.52%;
+  height: 52.4%;
+  //width: 30%;
+  //position: absolute;
+  margin-top: 2.5%;
+}
+
+.slideimage {
+  background-image: url('../img/slideimage.webp');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  overflow: hidden;
+  //height: 80%;
+  height: 100%;
+  width: 100%;
+  transition: all 1000ms;
+  //position: absolute;
+}
+
+#slideimage_profil_1 {
+  background-image: url('../img/foto-nicole-bw.jpg');
+}
+
+#slideimage_profil_2 {
+}
+
+.slideimage:hover {
+  background-position: top;
+}
+
+.slideimage_container .profil_beschreibung {
+  //background-color: #fff;
+  padding: 10px;
+  border: 1px gray solid;
+  position: relative;
+  top: 20%;
+  height: 20vh;
+}
+
+.slideimage_container .profil_beschreibung p {
+  font-size: 1.2em;
+  //text-align: justify;
+}
+
+.slideimage_container .profil_beschreibung #header {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 100;
+  //text-align: left;
+}
