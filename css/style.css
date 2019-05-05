@@ -14,7 +14,11 @@ url("css/fonts/champagne__limousines-webfont.svg#filename") format("svg");
   padding: 0px;
 }
 body {
-  background-color: #d2d2d2;
+  background-color: #ddd;
+  max-width: 1400px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
 .navbar {
   box-sizing: border-box;
@@ -49,15 +53,16 @@ body {
   //border: 4px black solid;
   transition: all 100ms;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .navbar a {
   text-decoration: none;
 }
 .navbar .element:hover {
   text-decoration: none;
-  background: black;
-  color: white;
+  //background: black;
+  //color: white;
+  border-bottom: 2px black solid;
   padding: 3px 10px;
   //border: 4px white solid;
 }
@@ -65,10 +70,14 @@ body {
   font-weight: bold;
   margin: 0px;
   padding: 0px;
-  background: black;
-  color: white;
+  //background: black;
+  //color: white;
   padding: 3px 15px;
   //border: 4px white solid;
+  //border: 2px black solid;
+  //border-left: 0;
+  //border-right: 0;
+  border-bottom: 3px black solid;
 }
 
 .navbar li {
@@ -76,26 +85,107 @@ body {
   margin-top: 0.65%;
 }
 
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer p {
+  margin: 2px;
+}
+
 .content {
   display: flex;
+  background-color: #d2d2d2;
 }
 .content #feather {
   flex: 1;
-  background-image: url(../img/feather.png);
-  border: 1px gray solid;
+  //border: 1px gray solid;
   background-color: #fff;
+  //height: 860px;
+  height: 86vh;
+}
+
+.content #feather #feather-img {
+  background-image: url(../img/feder_schwarz.png);
+  height: 200px;
   background-size: contain;
   background-repeat: no-repeat;
-  //height: 860px;
-  height: 89vh;
+  position: relative;
+  width: 70%;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content_home #feather #feather-img {
+  animation-name: feather_home;
+}
+@keyframes feather_home {
+  0% {}
+  100% {transform: translateY(20%) rotate(-20deg);}
+}
+
+.content_profil #feather #feather-img {
+  //transform: translateY(20%) rotate(-20deg);
+  animation-name: feather_profil;
+}
+@keyframes feather_profil {
+  0% {}
+  100% {transform: translateY(60%) rotate(20deg);}
+}
+
+.content_beratung #feather #feather-img {
+  //transform: translateY(60%) rotate(20deg);
+  animation-name: feather_beratung;
+}
+@keyframes feather_beratung {
+  0% {}
+  100% {transform: translateY(100%) rotate(-20deg);}
+}
+
+.content_impressionen #feather #feather-img {
+  //transform: translateY(100%) rotate(-30deg);
+  animation-name: feather_impressionen;
+}
+@keyframes feather_impressionen {
+  0% {}
+  100% {transform: translateY(140%) rotate(20deg);}
+}
+
+.content_kunst #feather #feather-img {
+  //transform: translateY(140%) rotate(20deg);
+  animation-name: feather_kunst;
+}
+@keyframes feather_kunst {
+  0% {}
+  100% {transform: translateY(180%) rotate(-20deg);}
+}
+
+.content_geschenke #feather #feather-img {
+  //transform: translateY(180%) rotate(-20deg);
+  animation-name: feather_geschenke;
+}
+@keyframes feather_geschenke {
+  0% {}
+  100% {transform: translateY(220%) rotate(40deg);}
+}
+
+.content_kontakt #feather #feather-img {
+  //transform: translateY(220%) rotate(20deg);
+  animation-name: feather_kontakt;
+}
+@keyframes feather_kontakt {
+  0% {}
+  100% {transform: translateY(260%) rotate(-20deg);}
 }
 
 #spruch_home {
   position: relative;
   left: 8%;
-  top: 80%;
-  font-size: 1.7em;
-  max-width: 70%;
+  top: 60%;
+  font-size: 1.3em;
+  max-width: 90%;
 }
 
 #spruch_home .author {
@@ -107,9 +197,9 @@ body {
 #spruch_profil {
   position: relative;
   left: 8%;
-  top: 80%;
-  font-size: 1.7em;
-  max-width: 70%;
+  top: 60%;
+  font-size: 1.3em;
+  max-width: 90%;
 }
 
 #spruch_profil .author {
@@ -118,51 +208,68 @@ body {
   line-height: 2em;
 }
 
-/*
-.content .text {
-  box-sizing: border-box;
-  font-family: sans-serif;
-  border: 1px gray solid;
-  flex: 4;
+.author {
+  font-size: 0.7em;
+  text-align: right;
+  line-height: 2em;
 }
 
-.content .text ul {
+#spruch_beratung {
   position: relative;
-  left: 55%;
-  top: 30%;
-  width: 40%;
+  left: 8%;
+  top: 60%;
+  font-size: 1.3em;
+  max-width: 90%;
 }
-
-.content .text ul li {
-  list-style: none;
-  font-size: 3em;
-  text-align: right;
-}
-.content .text p {
-  font-size: 2.2em;
+#spruch_impressionen {
   position: relative;
-  top: 40%;
-  text-align: right;
-  margin-right: 4%;
+  left: 8%;
+  top: 60%;
+  font-size: 1.3em;
+  max-width: 90%;
 }
-*/
+#spruch_kunst {
+  position: relative;
+  left: 8%;
+  top: 60%;
+  font-size: 1.3em;
+  max-width: 90%;
+}
+#spruch_geschenke {
+  position: relative;
+  left: 8%;
+  top: 60%;
+  font-size: 1.3em;
+  max-width: 90%;
+}
+#spruch_kontakt {
+  position: relative;
+  left: 8%;
+  top: 60%;
+  font-size: 1.3em;
+  max-width: 90%;
+}
 
 .content .textbox {
   box-sizing: border-box;
   font-family: sans-serif;
-  border: 1px gray solid;
+  //border: 1px gray solid;
   flex: 4;
   l
 }
 
-.content .text {
+.content_home .text {
   position: relative;
   width: 90%;
   right: -9%;
-  bottom: -42%;
+  bottom: -50%;
+  transition: 1000ms;
+}
+.content_home .text:hover {
+  bottom: -20%;
 }
 
-.content .text ul {
+.content_home .text ul {
   /*
   position: relative;
   left: 55%;
@@ -170,22 +277,88 @@ body {
   width: 40%;
   */
 }
+.content_home .text ul li {
+  list-style: none;
+}
+.content_home .text ul li .home_stichwort .list-extend {
+  max-height: 0;
+  transition: all 1000ms;
+  overflow: hidden;
+  opacity: 0;
+}
 
-.content .text ul li {
+.content_home .text ul li .home_stichwort:hover {
+  //background-color: red;
+}
+
+.content_home .text ul li .home_stichwort:hover .list-extend {
+  overflow: hidden;
+  max-height: 30px;
+  height: auto;
+  opacity: 1;
+}
+
+.content_beratung .textbox {
+  position: relative;
+  text-align: center;
+  top: 120px;
+  font-size: 1.4em;
+}
+
+p::selection {
+  background-color: gray;
+}
+
+.content_beratung .textbox .text p:first-child {
+  margin-bottom: 2.5em;
+}
+.content_beratung .textbox .text p:nth-last-child(2) {
+  margin-top: 2.5em;
+}
+
+.home_stichwort:hover #list-1 {
+  max-height: 300px;
+}
+.home_stichwort:hover #list-2 {
+  max-height: 185px;
+}
+.home_stichwort:hover #list-3 {
+  max-height: 280px;
+}
+.home_stichwort:hover #list-4 {
+  max-height: 230px;
+}
+.home_stichwort:hover #list-5 {
+  max-height: 255px;
+}
+.home_stichwort:hover #list-6 {
+  max-height: 140px;
+}
+.home_stichwort:active #list-4 {
+  animation-name: secret;
+  animation-duration: 1s;
+  animation-delay: 10s;
+  animation-iteration-count: infinite;
+  border-radius: 10px;
+  background-color: red;
+  transition-delay: 10s;
+}
+@keyframes secret {
+    0% {background-color: red;}
+    33% {background-color: green;}
+    66% {background-color: blue;}
+}
+.content_home .text ul li .home_stichwort .list-extend p {
+  font-size: 1.25em;
+  margin-right: 10px;
+}
+.content_home .text ul li p {
   list-style: none;
   font-size: 3em;
   text-align: right;
+  //line-height: 2em;
 }
-.content .text p {
-  font-size: 2.2em;
-  text-align: right;
-  line-height: 4em;
-  /*
-  position: relative;
-  top: 40%;
-  margin-right: 4%;
-  */
-}
+
 /*
 .slideimage {
   background-image: url('../img/slideimage.webp');
@@ -203,23 +376,18 @@ body {
 .slideimages {
   box-sizing: border-box;
   font-family: sans-serif;
-  border: 1px gray solid;
+  //border: 1px gray solid;
   flex: 4;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
 }
-/*
-.content .slideimages {
-
-}
-*/
 
 .slideimage_container {
-  width: 30%;
-  //height: 65.52%;
-  height: 52.4%;
   //width: 30%;
+  width: 450px;
+  height: 450px;
+  //height: 52.4%;
   //position: absolute;
   margin-top: 2.5%;
 }
@@ -242,10 +410,15 @@ body {
 }
 
 #slideimage_profil_2 {
+  background-image: url('../img/stil-fabrik.jpg');
+  background-position: top;
 }
 
 .slideimage:hover {
   background-position: top;
+}
+#slideimage_profil_2:hover {
+  background-position: bottom;
 }
 
 .slideimage_container .profil_beschreibung {
@@ -254,7 +427,6 @@ body {
   border: 1px gray solid;
   position: relative;
   top: 20%;
-  height: 20vh;
 }
 
 .slideimage_container .profil_beschreibung p {
