@@ -1,17 +1,8 @@
-@font-face {
-font-family: "champagne";
-src: url("css/fonts/champagne__limousines-webfont.eot");
-src:
-url("css/fonts/champagne__limousines-webfont.woff") format("woff"),
-url("css/fonts/champagne-_-limousines.otf") format("opentype"),
-url("css/fonts/champagne__limousines-webfont.svg#filename") format("svg");
-}
-
-
 
 * {
   margin: 0px;
   padding: 0px;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 body {
   background-color: #ddd;
@@ -20,21 +11,29 @@ body {
   left: 50%;
   transform: translate(-50%);
 }
+
+*::selection {
+  background-color: gray;
+  color: lightgray;
+}
+
 .navbar {
   box-sizing: border-box;
   padding-top: 0px;
-  background: #b6b6b6;
+  background: #9B9B9B;
   margin: 0px;
   padding: 0px;
   border-bottom: 5px black solid;
   //height: 100px;
   height: 11vh;
+  //height: 100px;
 }
 .navbar p {
-  font-family: sans-serif;
+  //font-family: sans-serif;
 }
 .navbar ul {
   padding: 10px 0px;
+  margin: 0px 5px;
   display: flex;
   flex-direction: row wrap;
   justify-content: flex-end;
@@ -95,14 +94,21 @@ body {
 
 .content {
   display: flex;
-  background-color: #d2d2d2;
+  //background-color: #d2d2d2;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6f6f6+0,9b9b9b+100 */
+  background: rgb(186,186,186); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(155,155,155,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(246,246,246,1) 0%,rgba(155,155,155,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(246,246,246,1) 0%,rgba(155,155,155,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#9b9b9b',GradientType=0 ); /* IE6-9 */
 }
 .content #feather {
   flex: 1;
   //border: 1px gray solid;
-  background-color: #fff;
+  //background-color: #fff;
   //height: 860px;
   height: 86vh;
+  border-right: black 5px solid;
 }
 
 .content #feather #feather-img {
@@ -179,80 +185,36 @@ body {
   0% {}
   100% {transform: translateY(260%) rotate(-20deg);}
 }
-
-#spruch_home {
-  position: relative;
-  left: 8%;
-  top: 60%;
-  font-size: 1.3em;
-  max-width: 90%;
+.home_stichwort:active #list-4 {
+  animation-name: secret-color;
+  animation-duration: 1s;
+  animation-delay: 10s;
+  animation-iteration-count: infinite;
+  border-radius: 10px;
+  background-color: red;
+  transition-delay: 10s;
 }
-
-#spruch_home .author {
-  font-size: 0.7em;
-  text-align: right;
-  line-height: 2em;
+@keyframes secret-color {
+    0% {background-color: red;}
+    33% {background-color: green;}
+    66% {background-color: blue;}
 }
-
-#spruch_profil {
-  position: relative;
-  left: 8%;
-  top: 60%;
-  font-size: 1.3em;
-  max-width: 90%;
-}
-
-#spruch_profil .author {
-  font-size: 0.7em;
-  text-align: right;
-  line-height: 2em;
-}
-
 .author {
   font-size: 0.7em;
   text-align: right;
   line-height: 2em;
 }
-
-#spruch_beratung {
+.sprueche {
   position: relative;
   left: 8%;
-  top: 60%;
-  font-size: 1.3em;
-  max-width: 90%;
-}
-#spruch_impressionen {
-  position: relative;
-  left: 8%;
-  top: 60%;
-  font-size: 1.3em;
-  max-width: 90%;
-}
-#spruch_kunst {
-  position: relative;
-  left: 8%;
-  top: 60%;
-  font-size: 1.3em;
-  max-width: 90%;
-}
-#spruch_geschenke {
-  position: relative;
-  left: 8%;
-  top: 60%;
-  font-size: 1.3em;
-  max-width: 90%;
-}
-#spruch_kontakt {
-  position: relative;
-  left: 8%;
-  top: 60%;
+  top: 57.5%;
   font-size: 1.3em;
   max-width: 90%;
 }
 
 .content .textbox {
   box-sizing: border-box;
-  font-family: sans-serif;
+  //font-family: sans-serif;
   //border: 1px gray solid;
   flex: 4;
   l
@@ -266,7 +228,7 @@ body {
   transition: 1000ms;
 }
 .content_home .text:hover {
-  bottom: -20%;
+  bottom: -15%;
 }
 
 .content_home .text ul {
@@ -298,58 +260,27 @@ body {
   opacity: 1;
 }
 
-.content_beratung .textbox {
-  position: relative;
-  text-align: center;
-  top: 120px;
-  font-size: 1.4em;
-}
-
-p::selection {
-  background-color: gray;
-}
-
-.content_beratung .textbox .text p:first-child {
-  margin-bottom: 2.5em;
-}
-.content_beratung .textbox .text p:nth-last-child(2) {
-  margin-top: 2.5em;
-}
-
 .home_stichwort:hover #list-1 {
-  max-height: 300px;
+  max-height: 320px;
 }
 .home_stichwort:hover #list-2 {
-  max-height: 185px;
+  max-height: 195px;
 }
 .home_stichwort:hover #list-3 {
-  max-height: 280px;
+  max-height: 290px;
 }
 .home_stichwort:hover #list-4 {
-  max-height: 230px;
+  max-height: 235px;
 }
 .home_stichwort:hover #list-5 {
-  max-height: 255px;
+  max-height: 260px;
 }
 .home_stichwort:hover #list-6 {
   max-height: 140px;
 }
-.home_stichwort:active #list-4 {
-  animation-name: secret;
-  animation-duration: 1s;
-  animation-delay: 10s;
-  animation-iteration-count: infinite;
-  border-radius: 10px;
-  background-color: red;
-  transition-delay: 10s;
-}
-@keyframes secret {
-    0% {background-color: red;}
-    33% {background-color: green;}
-    66% {background-color: blue;}
-}
 .content_home .text ul li .home_stichwort .list-extend p {
-  font-size: 1.25em;
+  //font-size: 1.25em;
+  font-size: 20px;
   margin-right: 10px;
 }
 .content_home .text ul li p {
@@ -359,6 +290,35 @@ p::selection {
   //line-height: 2em;
 }
 
+.content_beratung .textbox {
+  position: relative;
+  text-align: center;
+  //top: 120px;
+  font-size: 1.2em;
+}
+
+.content_beratung .textbox .text {
+  position: relative;
+  //top: -120px;
+}
+
+.content_beratung .textbox .text p:nth-child(2) {
+  margin-top: 1em;
+  margin-bottom: 1.25em;
+}
+.content_beratung .textbox .text p:nth-last-child(2) {
+  margin-top: 1.25em;
+}
+
+.content_beratung #feder-beratung {
+  width: 100%;
+  filter: grayscale(1);
+  transition: all 500ms;
+}
+
+.content_beratung #feder-beratung:hover {
+  filter: grayscale(0);
+}
 /*
 .slideimage {
   background-image: url('../img/slideimage.webp');
@@ -375,7 +335,7 @@ p::selection {
 
 .slideimages {
   box-sizing: border-box;
-  font-family: sans-serif;
+  //font-family: sans-serif;
   //border: 1px gray solid;
   flex: 4;
   display: flex;
@@ -426,7 +386,7 @@ p::selection {
   padding: 10px;
   border: 1px gray solid;
   position: relative;
-  top: 20%;
+  top: 10%;
 }
 
 .slideimage_container .profil_beschreibung p {
@@ -439,4 +399,140 @@ p::selection {
   font-size: 1.4em;
   font-weight: 100;
   //text-align: left;
+}
+
+#slideimage_geschenke_1 {
+  //background-image: url('../img/foto-nicole-bw.JPG');
+  background-position: top;
+}
+
+#slideimage_geschenke_2 {
+  //background-image: url('../img/stil-fabrik.jpg');
+}
+
+#slideimage_geschenke_1:hover {
+  background-position: bottom;
+}
+#slideimage_geschenke_2:hover {
+  background-position: top;
+}
+
+.slideimage_container .geschenke_beschreibung, .slideimage_container .geschenke_beschreibung_2 {
+  //background-color: #fff;
+  padding: 10px;
+  border: 1px gray solid;
+  position: relative;
+  top: 10%;
+}
+
+.slideimage_container .geschenke_beschreibung p {
+  font-size: 1.2em;
+  //text-align: justify;
+}
+
+.slideimage_container .geschenke_beschreibung_2 p {
+  font-size: 1.2em;
+}
+
+.slideimage_container .geschenke_beschreibung_2 p:nth-last-child(1), .slideimage_container .geschenke_beschreibung_2 p:nth-last-child(2) {
+  font-size: 0.7em;
+}
+
+.slideimage_container .geschenke_beschreibung #header, .slideimage_container .geschenke_beschreibung_2 #header {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 100;
+  //text-align: left;
+}
+
+#contact-mail {
+  text-decoration: none;
+  color: #000;
+  //background-color: #b8b8b8;
+  margin: 10px;
+  padding: 5px;
+  //border-radius: 2px;
+  position: relative;
+  top: -25px;
+  left: 700px;
+  font-size: 20px;
+  transition: all 100ms;
+  text-transform: uppercase;
+  border-bottom: 1px black solid;
+}
+#contact-mail:hover {
+  //background-color: red;
+  border-bottom: 3px black solid;
+}
+
+
+.contact {
+  width: 50%;
+  font-size: 1.4em;
+  position: relative;
+  top: 300px;
+  left: 150px;
+}
+.contact p:first-child {
+  text-transform: uppercase;
+}
+.contact p:nth-child(4) {
+  margin-top: 50px;
+}
+
+
+.content_kontakt #img-end {
+  width: 100%;
+  position: relative;
+  top: 400px;
+  filter: grayscale(1);
+  transition: all 500ms;
+}
+.content_kontakt #img-end:hover {
+  filter: grayscale(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.impressionen-wip-2 {
+  font-size: 1.5em;
+  position: relative;
+  right: -760px;
+  bottom: -180px;
+  text-align: right;
+  width: 30%;
+}
+
+.impressionen-wip {
+  font-size: 7em;
+  color: #000;
+  width: 30%;
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+
+.impressionen-wip p:first-child {
+  position: inherit;
+  left: 100px;
+}
+.impressionen-wip p:nth-child(3) {
+  position: inherit;
+  left: 150px;
+}
+.impressionen-wip p:nth-child(4) {
+  position: inherit;
+  left: 90px;
 }
