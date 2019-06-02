@@ -4,7 +4,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: Roboto Light, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-family: 'Roboto Light', Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 body {
   background-color: #ddd;
@@ -46,6 +46,9 @@ body {
   position: absolute;
   left: 15px;
   top: 5px;
+  /* margin-left: 15px; */
+  /* margin-top: 5px; */
+  /* margin: -10px 0 0 -20px; */ */
 }
 .navbar .element {
   margin: 0px 10px;
