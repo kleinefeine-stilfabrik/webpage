@@ -1,0 +1,26 @@
+.collapsible {
+  /* background-color: #eee; */
+  background-color: inherit;
+  color: #444;
+  cursor: pointer;
+  padding: 0 18px;
+  width: 100%;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 50px;
+}
+
+.collapsible-active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.collapsible-content {
+  font-size: 20px;
+  padding: 0 18px;
+  background-color: inherit;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  text-align: right;
+}

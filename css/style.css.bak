@@ -1,11 +1,18 @@
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap');
+
 * {
   margin: 0px;
   padding: 0px;
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-family: 'Roboto Light', Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: 300;
+  /* color: #AD889A; */
+  color: #4D4D4D;
 }
 body {
-  background-color: #ddd;
+  /* background-color: #ddd; */
+  background-color: #B3B3B3;
+  //background-color: #DDBDBA;
   max-width: 1400px;
   position: relative;
   left: 50%;
@@ -13,17 +20,19 @@ body {
 }
 
 *::selection {
-  background-color: gray;
+  /* background-color: gray; */
+  background-color: #777;
   color: lightgray;
 }
 
 .navbar {
   box-sizing: border-box;
   padding-top: 0px;
-  background: #9B9B9B;
+  background: #666;
+  //background: #B48E8A;
   margin: 0px;
   padding: 0px;
-  border-bottom: 5px black solid;
+  //border-bottom: 5px black solid;
   height: 100px;
 }
 .navbar p {
@@ -32,34 +41,42 @@ body {
 .navbar ul {
   padding: 10px 0px;
   margin: 0px 5px;
+  padding-top: 20px;
   display: flex;
   flex-direction: row wrap;
   justify-content: flex-end;
   flex-wrap: wrap;
 }
 .navbar #logo {
-  transform: scale(0.8);
   position: absolute;
-  left: -30px;
-  top: -10px;
+  left: 15px;
+  top: 5px;
+  /* margin-left: 15px; */
+  /* margin-top: 5px; */
+  /* margin: -10px 0 0 -20px; */ */
 }
 .navbar .element {
   margin: 0px 10px;
-  color: black;
+  /* color: black; */
   padding: 3px 10px;
   //border: 4px black solid;
   transition: all 100ms;
   text-align: center;
   font-size: 1.5em;
+  font-family: 'Roboto thin', Calibri;
 }
 .navbar a {
   text-decoration: none;
 }
+.navbar p {
+  color: white;
+}
 .navbar .element:hover {
   text-decoration: none;
   //background: black;
-  //color: white;
-  border-bottom: 2px black solid;
+  color: white;
+  /* border-bottom: 2px #AD889A solid; */
+  border-bottom: 2px #fff solid;
   padding: 3px 10px;
   //border: 4px white solid;
 }
@@ -68,13 +85,14 @@ body {
   margin: 0px;
   padding: 0px;
   //background: black;
-  //color: white;
+  color: white;
   padding: 3px 15px;
   //border: 4px white solid;
   //border: 2px black solid;
   //border-left: 0;
   //border-right: 0;
-  border-bottom: 3px black solid;
+  /* border-bottom: 3px #AD889A solid; */
+  border-bottom: 3px #fff solid;
 }
 
 .navbar li {
@@ -95,23 +113,19 @@ body {
   display: flex;
   //background-color: #d2d2d2;
   ///* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6f6f6+0,9b9b9b+100 */
-  //background: rgb(186,186,186); /* Old browsers */
-  //background: -moz-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(155,155,155,1) 100%); /* FF3.6-15 */
-  //background: -webkit-linear-gradient(top, rgba(246,246,246,1) 0%,rgba(155,155,155,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  //background: linear-gradient(to bottom, rgba(246,246,246,1) 0%,rgba(155,155,155,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#9b9b9b',GradientType=0 ); /* IE6-9 */
+  /* background: rgb(186,186,186); /* Old browsers */
+  /* background: -moz-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(155,155,155,1) 100%); /* FF3.6-15 */
+  /* background: -webkit-linear-gradient(top, rgba(246,246,246,1) 0%,rgba(155,155,155,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  /* background: linear-gradient(to bottom, rgba(246,246,246,1) 0%,rgba(155,155,155,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#9b9b9b',GradientType=0 ); /* IE6-9 */
 
-  //background: rgb(186,163,169); /* Old browsers */
-  //background: -moz-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(186,163,169,1) 100%); /* FF3.6-15 */
-  //background: -webkit-linear-gradient(top, rgba(246,246,246,1) 0%,rgba(186,163,169,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  //background: linear-gradient(to bottom, rgba(246,246,246,1) 0%,rgba(186,163,169,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  //background: rgb(217, 136, 128); /* Old browsers */
+  //background: -moz-linear-gradient(top, rgba(226, 194, 191,1) 0%, rgba(180, 142, 138,1) 100%); /* FF3.6-15 */
+  //background: -webkit-linear-gradient(top, rgba(226, 194, 191,1) 0%,rgba(180, 142, 138,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  //background: linear-gradient(to bottom, rgba(226, 194, 191,1) 0%,rgba(180, 142, 138,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#9b9b9b',GradientType=0 ); /* IE6-9 */
-
-  background: rgb(81,106,94); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(174,207,191,1) 0%, rgba(81,106,94,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(174,207,191,1) 0%,rgba(81,106,94,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(174,207,191,1) 0%,rgba(81,106,94,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#9b9b9b',GradientType=0 ); /* IE6-9 */
+  /* background-color: #444; */
+  background-color: #E6E6E6
 }
 .content #feather {
   flex: 1;
@@ -119,11 +133,13 @@ body {
   //background-color: #fff;
   //height: 86vh;
   height: 790px;
-  border-right: black 5px solid;
+  //border-right: black 5px solid;
+  background: #666;
+  //background: #B48E8A;
 }
 
 .content #feather #feather-img {
-  background-image: url(../img/feder_schwarz.png);
+  background-image: url(../img/feder.png);
   height: 200px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -203,6 +219,7 @@ body {
   100% {transform: translateY(520px) rotate(-20deg);}
   /* 100% {transform: translateY(260%) rotate(-20deg);} */
 }
+/*
 .home_stichwort:active #list-4 {
   animation-name: secret-color;
   animation-duration: 1s;
@@ -212,6 +229,7 @@ body {
   background-color: red;
   transition-delay: 10s;
 }
+*/
 @keyframes secret-color {
     0% {background-color: red;}
     33% {background-color: green;}
@@ -229,13 +247,17 @@ body {
   font-size: 1.3em;
   max-width: 90%;
 }
+.sprueche p {
+  color: white;
+}
 
 .content .textbox {
   box-sizing: border-box;
   //font-family: sans-serif;
   //border: 1px gray solid;
   flex: 4;
-  l
+  overflow: hidden;
+  height: 80vh;
 }
 
 .content_home .text {
@@ -244,6 +266,7 @@ body {
   right: -9%;
   bottom: -50%;
   transition: 1000ms;
+  margin-bottom: 50%;
 }
 .content_home .text:hover {
   bottom: -100px;
@@ -407,7 +430,8 @@ body {
 .slideimage_container .profil_beschreibung {
   //background-color: #fff;
   padding: 10px;
-  border: 1px gray solid;
+  /* border: 1px gray solid; */
+  border: 1px #777 solid;
   position: relative;
   top: 10%;
 }
@@ -478,7 +502,7 @@ body {
   position: relative;
   top: -25px;
   left: 700px;
-  font-size: 20px;
+  font-size: 25px;
   transition: all 100ms;
   text-transform: uppercase;
   border-bottom: 1px black solid;
@@ -491,9 +515,9 @@ body {
 
 .contact {
   width: 50%;
-  font-size: 1.4em;
+  font-size: 1.6em;
   position: relative;
-  top: 300px;
+  top: 200px;
   left: 150px;
 }
 .contact p:first-child {
@@ -507,7 +531,7 @@ body {
 .content_kontakt #img-end {
   width: 100%;
   position: relative;
-  top: 400px;
+  top: 275px;
   filter: grayscale(1);
   transition: all 500ms;
 }
@@ -515,7 +539,9 @@ body {
   filter: grayscale(0);
 }
 
-
+.content_kunst .textbox {
+  //background: #333;
+}
 
 
 

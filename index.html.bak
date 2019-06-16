@@ -2,14 +2,21 @@
 <html lang="de" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
     <title>Kleine feine Stilfabrik</title>
+    <link rel="shortcut icon" href="img/shortcut.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/home.css">
+
+    <script type="text/javascript" src="js/home.js"></script>
   </head>
   <body>
     <!-- Navbar -->
     <div class="navbar">
       <ul>
-        <li><img id="logo" src="img/logo.png" alt="Logo"></li>
+        <img id="logo" src="img/logo.png" alt="Logo">
         <li><p id="activeNav" class="element">Home</p></li>
         <li><a href="profil.html"><p class="element">Profil</p></a></li>
         <li><a href="beratung.html"><p class="element">Beratung</p></a></li>
@@ -96,7 +103,7 @@
               </div>
             </div></li>
             <li><div class="home_stichwort">
-              <p>leben mit kunst.</p>
+              <p>wohnen mit kunst.</p>
               <div class="list-extend" id="list-5">
                 <p>Was ist Kunst?</p>
                 <p>Verzierung dieser Welt (Wilhelm Busch).</p>
