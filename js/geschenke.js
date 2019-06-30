@@ -1,4 +1,4 @@
-fetch('../src/special-action.json')
+fetch('./src/special-action.json')
   .then(function(response) {
     return response.json();
   })
