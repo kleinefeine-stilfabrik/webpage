@@ -1,0 +1,79 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto Light', Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: 300;
+  /* color: #AD889A; */
+  color: #4D4D4D;
+}
+
+html {
+  height: 100vh;
+}
+
+p {
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 22.5px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+#container {
+  margin: 25px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+  "impressum haftung urheberrecht datenschutz"
+  "impressum datenschutzrichtlinie datenschutzrichtlinie datenschutzrichtlinie";
+  grid-gap: 20px;
+  grid-auto-columns: 10px;
+  height: 50%;
+}
+#container > div {
+  max-height: 100%;
+}
+
+#impressum {
+  grid-area: impressum;
+  background-color: #666;
+  padding: 10px;
+}
+#impressum .fixed {
+  position: fixed;
+}
+#impressum .fixed * {
+  color: #fff;
+}
+#impressum .fixed *:not(:first-child) {
+  font-size: 20px;
+}
+#impressum .fixed h2:first-child {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+#haftung {
+  grid-area: haftung;
+}
+#urheberrecht {
+  grid-area: urheberrecht;
+}
+#datenschutz {
+  grid-area: datenschutz;
+}
+#datenschutzrichtlinie {
+  grid-area: datenschutzrichtlinie;
+}
+#datenschutzrichtlinie > h5 {
+  margin-top: 5px;
+}
