@@ -93,4 +93,7 @@ h5 {
     grid-auto-columns: 10px;
     height: 50%;
   }
+  #impressum .fixed {
+    position: relative;
+  }
 }
