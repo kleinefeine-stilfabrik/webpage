@@ -77,3 +77,20 @@ h5 {
 #datenschutzrichtlinie > h5 {
   margin-top: 5px;
 }
+
+
+@media only screen and (max-width: 600px) {
+  #container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+    "impressum"
+    "haftung"
+    "urheberrecht"
+    "datenschutz"
+    "datenschutzrichtlinie";
+    grid-gap: 20px;
+    grid-auto-columns: 10px;
+    height: 50%;
+  }
+}
