@@ -1,0 +1,40 @@
+@media only screen and (max-width: 1300px) {
+  .sprueche {
+    top: 425px;
+  }
+  @keyframes feather_kontakt {
+    0% {}
+    100% {transform: translateY(500px) rotate(-20deg);}
+  }
+  @media only screen and (max-width: 1050px) {
+    .sprueche {
+      top: 375px;
+    }
+    @keyframes feather_kontakt {
+      0% {}
+      100% {transform: translateY(475px) rotate(-20deg);}
+    }
+    @media only screen and (max-width: 800px) {
+      .sprueche {
+        font-size: 1em;
+      }
+      .contact {
+        margin-top: 80px;
+        margin-left: 50px;
+      }
+      @media only screen and (max-width: 500px) {
+        .content {
+          height: 80vh!important;
+        }
+        #feather {
+          display: none;
+        }
+        @media only screen and (max-width: 400px) {
+          .contact {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1200px) {
+  body {
+    width: 100vw;
+  }
+  .slideimage_container {
+    width: 300px;
+    height: 300px;
+  }
+  .slideimage {
+    width: 300px;
+    height: 300px;
+    /* margin: auto; */
+  }
+  .profil_beschreibung {
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+  }
+  @media only screen and (max-width: 800px) {
+    .slideimage_container {
+      width: 200px;
+      height: 200px;
+    }
+    .slideimage {
+      width: 200px;
+      height: 200px;
+    }
+    .profil_beschreibung {
+      font-size: .8em;
+    }
+    @media only screen and (max-width: 600px) {
+      .slideimage_container {
+        width: 150px;
+        height: 150px;
+      }
+      .slideimage {
+        width: 150px;
+        height: 150px;
+      }
+      .content {
+        height: 100vh;
+        overflow-y: scroll;
+      }
+      #feather {
+        display: none;
+      }
+    }
+  }
+}

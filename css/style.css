@@ -426,7 +426,6 @@ body {
 }
 
 .slideimage {
-  background-image: url('../img/slideimage.webp');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -632,8 +631,35 @@ body {
 }
 
 @media only screen and (max-width: 1250px) {
+  .navbar p {
+    font-size: 1em!important;
+  }
   #logo {
     display: hidden;
     visibility: hidden;
+  }
+  @media only screen and (max-width: 750px) {
+    .navbar p {
+      font-size: .8em!important;
+    }
+    @media only screen and (max-width: 650px) {
+      .navbar p {
+        font-size: .6em!important;
+      }
+      @media only screen and (max-width: 600px) {
+        .navbar {
+          height: 40px;
+        }
+        .navbar ul {
+          padding-top: 5px;
+        }
+        .navbar p {
+          font-size: .5em!important;
+          margin: 0!important;
+          padding-left: 5px!important;
+          padding-right: 5px!important;
+        }
+      }
+    }
   }
 }

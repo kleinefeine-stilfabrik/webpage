@@ -29,14 +29,6 @@ h5 {
 
 #container {
   margin: 25px;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas:
-  "impressum haftung urheberrecht datenschutz"
-  "impressum datenschutzrichtlinie datenschutzrichtlinie datenschutzrichtlinie";
-  grid-gap: 20px;
-  grid-auto-columns: 10px;
   height: 50%;
 }
 #container > div {
@@ -44,43 +36,72 @@ h5 {
 }
 
 #impressum {
-  grid-area: impressum;
   background-color: #666;
   padding: 10px;
+  margin-bottom: 25px;
 }
-#impressum .fixed {
-  position: fixed;
-}
-#impressum .fixed * {
+#impressum * {
   color: #fff;
 }
-#impressum .fixed *:not(:first-child) {
+#impressum *:not(:first-child) {
   font-size: 20px;
 }
-#impressum .fixed h2:first-child {
+#impressum h2:first-child {
   margin-bottom: 30px;
   font-size: 40px;
 }
-
 #haftung {
-  grid-area: haftung;
+  margin-bottom: 25px;
 }
 #urheberrecht {
-  grid-area: urheberrecht;
+  margin-bottom: 25px;
 }
 #datenschutz {
-  grid-area: datenschutz;
+  margin-bottom: 25px;
 }
-#datenschutzrichtlinie {
-  grid-area: datenschutzrichtlinie;
-}
+
+
 #datenschutzrichtlinie > h5 {
   margin-top: 5px;
 }
 
+@supports (display: grid) {
 
-@media only screen and (max-width: 600px) {
   #container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "impressum haftung urheberrecht datenschutz"
+    "impressum datenschutzrichtlinie datenschutzrichtlinie datenschutzrichtlinie";
+    grid-gap: 20px;
+    grid-auto-columns: 10px;
+  }
+
+  #impressum {
+    grid-area: impressum;
+    margin-bottom: 0;
+  }
+  #haftung {
+    grid-area: haftung;
+    margin-bottom: 0;
+  }
+  #urheberrecht {
+    grid-area: urheberrecht;
+    margin-bottom: 0;
+  }
+  #datenschutz {
+    grid-area: datenschutz;
+    margin-bottom: 0;
+  }
+  #datenschutzrichtlinie {
+    grid-area: datenschutzrichtlinie;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  /* #container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
@@ -92,8 +113,20 @@ h5 {
     grid-gap: 20px;
     grid-auto-columns: 10px;
     height: 50%;
+  } */
+  #container {
+    display: block;
   }
-  #impressum .fixed {
-    position: relative;
+  #haftung {
+    margin-bottom: 25px;
+  }
+  #impressum {
+    margin-bottom: 25px;
+  }
+  #urheberrecht {
+    margin-bottom: 25px;
+  }
+  #datenschutz {
+    margin-bottom: 25px;
   }
 }

@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Kleine feine Stilfabrik</title>
   <link rel="shortcut icon" href="img/shortcut.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/kunst.css">
 </head>
@@ -37,13 +38,18 @@
         <p>Geschmäcker sind verschieden. Kunst polarisiert. Über Geschmack lässt sich nicht streiten.<br>Denn ein jeder weiß, was ihm gefällt, hat ein Gespür dafür, was ihm guttut.<br>Umgeben Sie sich mit Kunst, die Sie beflügelt - zu Hause, im Büro, im Garten..<br>Ob Skulptur, Malwerk oder Fotografie: Kunst ist gemacht für Sie und all jene, die etwas für sie empfinden.<br>Flügelschläge. Federleichtigkeit. Nestwärme.<br>Wir halten Kontakt zu unterschiedlichsten Künstlern, heimischen Ateliers, kleinen Galerien und Händlern.<br>...und wir führen die Feder und gestalten selbst!</p>
         <p>Stöbern Sie in unserem Angebot und fliegen Sie mit einem unserer Unikate davon:</p>
       </div>
-      <div class="slideshow-background" onmouseenter="console.log('enter');clearInterval(slidetimer);clearInterval(slidetimer_);" onmouseleave="console.log('leave');slidetimer_ = setInterval(autoSlide, 7000);">
+      <div class="slideshow-background" onmouseenter="clearInterval(slidetimer);clearInterval(slidetimer_);" onmouseleave="slidetimer_ = setInterval(autoSlide, 7000);">
         <div class="slideshow-container">
 
           <!-- Full-width images with number and caption text -->
           <div class="mySlides slide_fade">
             <img src="img/kunst/fremde_freunde.jpg">
-            <div class="slide_text">Fremde Freunde - 33x55x1 cm - Acryl mit Sand und Ölkreide auf Leinwand - unverkäuflich</div>
+            <div class="slide_text">Fremde Freunde - 55x33x1 cm - Acryl mit Sand und Ölkreide auf Leinwand - unverkäuflich</div>
+          </div>
+
+          <div class="mySlides slide_fade">
+            <img src="img/kunst/begegnungen.png">
+            <div class="slide_text">Begegnungen - 160x20x1 cm - Acryl mit Sand und Ölkreide auf Leinwand - unverkäuflich</div>
           </div>
 
           <div class="mySlides slide_fade">
@@ -53,12 +59,12 @@
 
           <div class="mySlides slide_fade">
             <img src="img/kunst/fire_ice.png">
-            <div class="slide_text">Fire & Ice, 2tlg. - je 30x40x4 cm - Islandsand in Acryl mit Schlagmetall auf Leinwand - 95,00 €</div>
+            <div class="slide_text">Fire & Ice, 2tlg. - je 40x30x4 cm - Islandsand in Acryl mit Schlagmetall auf Leinwand - 95,00 €</div>
           </div>
 
           <div class="mySlides slide_fade">
             <img src="img/kunst/kraft_2.jpg">
-            <div class="slide_text">Kraft II - 40x50x4 cm - Acryl und Ölkreide mit Schlagmetall auf Leinwand - 49,00 €</div>
+            <div class="slide_text">Kraft II - 50x40x4 cm - Acryl und Ölkreide mit Schlagmetall auf Leinwand - 49,00 €</div>
           </div>
 
           <div class="mySlides slide_fade">
@@ -77,22 +83,37 @@
           </div>
 
           <div class="mySlides slide_fade">
+            <img src="img/kunst/wellenschlag.jpg">
+            <div class="slide_text">Wellenschlag - 50x50x1 cm - Acryl auf Leinwand - 45,00 €<br>Auf Wunsch mit Aufpreis im weißen Schattenfugenrahmen</div>
+          </div>
+
+          <div class="mySlides slide_fade">
+            <img src="img/kunst/vulcano.jpg">
+            <div class="slide_text">Vulcano - 50x60x1 cm - Acryl auf Leinwand - 55,00 € <br>Auf Wunsch mit Aufpreis im Schattenfugenrahmen Holz</div>
+          </div>
+
+          <div class="mySlides slide_fade">
             <img src="img/kunst/grashüpfers_reich.jpg">
             <div class="slide_text">Grashüpfers Reich - 80x120x4 cm - Acryl auf Leinwand - 145,00 €</div>
           </div>
 
           <div class="mySlides slide_fade">
             <img src="img/kunst/backstein.jpg">
-            <div class="slide_text">Backstein - 38x46x1 cm - Acryl mit Sand auf Leinwand - 59,00 €</div>
+            <div class="slide_text">Backstein - 46x38x1 cm - Acryl mit Sand auf Leinwand - 59,00 €</div>
+          </div>
+
+          <div class="mySlides slide_fade">
+            <img src="img/kunst/blauer_block.jpg">
+            <div class="slide_text">Blauer Block - 30x30x4 cm - Acryl mit Sand auf Leinwand - 30,00 €</div>
           </div>
 
           <div class="mySlides slide_fade">
             <img src="img/kunst/first_second.png">
-            <div class="slide_text">first & second - je 100x120x1 cm - Acryl auf Leinwand - pro Stück 120,00 €</div>
+            <div class="slide_text">first & second - je 120100xx1 cm - Acryl auf Leinwand - pro Stück 120,00 €</div>
           </div>
 
           <div class="mySlides slide_fade">
-            <img src="img/kunst/mann.jpg">
+            <img src="img/kunst/mann_frau.png">
             <div class="slide_text">Mann & Frau, 2tlg. - je 90x130x1 cm - Acryl auf Leinwand - unverkäuflich</div>
           </div>
 
@@ -113,7 +134,7 @@
 
           <div class="mySlides slide_fade">
             <img src="img/kunst/kinderaugen_sehen_bunt.jpg">
-            <div class="slide_text">Kinderaugen sehen bunt - 50x60x1 cm - Acryl auf Leinwand - 45,00 €</div>
+            <div class="slide_text">Kinderaugen sehen bunt - 60x50x1 cm - Acryl auf Leinwand - 45,00 €</div>
           </div>
 
           <!-- Next and previous buttons -->
