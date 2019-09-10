@@ -5,6 +5,7 @@
   <title>Kleine feine Stilfabrik</title>
   <link rel="shortcut icon" href="img/shortcut.png">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/impressionen.css">
 </head>
 <body>
   <div class="navbar">
@@ -33,15 +34,95 @@
 
     <div class="textbox">
       <div class="text">
-        <div class="impressionen-wip">
-          <p>IM</p>
-          <p>PRES</p>
-          <p>SION</p>
-          <p>EN</p>
-        </div>
-        <div class="impressionen-wip-2">
-          <p>Diese Seite ist für Sie in Arbeit.</p>
-          <p>Bilder folgen in Kürze.</p>
+        <p id="mainText">Klein, aber fein - der Showroom der Stilfabrik.<br>Treten Sie ein und lassen Sie sich von unseren Projekten inspirieren...</p>
+        <div class="slideshow-background" onmouseenter="clearInterval(slidetimer);clearInterval(slidetimer_);" onmouseleave="slidetimer_ = setInterval(autoSlide, 7000);">
+          <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides slide_fade" id="bruchhausen">
+              <div class="container">
+                <img src="/img/impressionen/ornament.jpg" alt="Ornamente">
+                <p class="mainText">Die Aufgabe:
+                  <br>Umgestaltung des Wohn- und Esszimmers, Neuanschaffung entsprechender Möbel. Der dunkle Nussbaum-Charme der 1960er-Jahre soll einem modernen Look weichen, Wohn- und Esszimmer optisch zusammengehören. Opa Heinz wünscht sich einen großen Fernseher zum Fußball-Schauen, Oma Thea viel Platz für Familie & Freunde.
+                  <br>
+                  <br>Die Idee:
+                  <br>Modulare, leichte Wohnmöbel stehen vor einer Riemchenwand aus Stein. Trotz seiner Größe ordnet sich der TV-Bildschirm unter. Indirektes Licht im Glasschrank schafft Stimmung oder entlastet das Auge beim Fernsehen. Komplettiert wird das Ensemble durch heimische Kunst aus Detmold (Engels-Skulptur, Gabi Maahs). Mutiges Türkis schenkt ganzjährig Frische und verbindet durch Wandvorsprünge und Lese-Ecke die offenen Räume. Im Esszimmer greift warme Eiche das Holz des Wohnzimmers auf und ist doch eigenständig. Geschirr findet im Sideboard Platz, Licht im Glasfach spendet stimmungsvolles Licht. Eine große Tischplatte & hochwertiges Leder am Essplatz laden zum Verweilen ein und auf der Sitzbank finden bei Bedarf viele liebe Gäste Platz!
+                  <br></p>
+                  <div id="balkenLinks"></div>
+                  <div id="balkenRechts"></div>
+              </div>
+            </div>
+            <div class="mySlides slide_fade" id="bruchhausen2">
+              <div class="container">
+                <img src="/img/impressionen/bruchhausen_engel.jpg" alt="Engel">
+                <img src="/img/impressionen/bruchhausen_wohnzimmer.jpg" alt="Wohnzimmer">
+              </div>
+            </div>
+            <div class="mySlides slide_fade" id="bruchhausen3">
+              <div class="container">
+                <img src="/img/impressionen/bruchhausen_übergang.jpg" alt="Übergang">
+                <img src="/img/impressionen/bruchhausen_esstisch.jpg" alt="Esstisch">
+              </div>
+            </div>
+            <div class="mySlides slide_fade" id="bruchhausen4">
+              <div class="container">
+                <img src="/img/impressionen/bruchhausen_sitzplatz.jpg" alt="Sitzplatz">
+                <img src="/img/impressionen/bruchhausen_wand.jpg" alt="Wand">
+              </div>
+            </div>
+
+            <div class="mySlides slide_fade" id="hobelbank">
+              <div class="container">
+                <img src="/img/impressionen/hobelbank.jpg" alt="Hobelbank">
+                <p class="mainText">Die Aufgabe:
+                  <br>Integration einer fast 100 Jahre alten Hobelbank in ein modernes Wohnhaus. Seit vielen Jahren steht sie verstaubt und fast vergessen im Abstellraum seiner Eltern. Thorsten möchte sie,  wie auch immer, zu neuem Leben erwecken. Im eigenen Werkzeugkeller wird repariert, nicht gefertigt.  Wohin also mit dem guten Stück?
+                  <br>
+                  <br>Die Idee:
+                  <br>Eine Werkbank gehört dahin, wo gewerkelt wird - in die Küche! Die Spuren des bisherigen Lebens sichtbar erhalten, hat ein Tischler ihre Oberfläche lebensmitteltauglich aufbereitet. Wo einst der Urgroßvater Kirchenbänke mit dem Hobel bearbeitete, wird heute Käse und Gemüse gehobelt. Auf Küchenparties dient das Erbstück als Ablagefläche für das Bufett.  Das Anthrazit der Wand verleiht ihm das notwendige Gewicht. Eine antike Arbeitsleuchte zur Wandmontage (Kaiser Idell, Mod. 6718, Scherengelenk) wird hoffentlich  kurzfristig bei ebay ersteigert. Der Stilbruch tut dem Raum gut, erzeugt Spannung, und Geschichte bleibt lebendig!</p>
+                  <div id="balkenLinks"></div>
+                  <div id="balkenRechts"></div>
+              </div>
+            </div>
+            <div class="mySlides slide_fade" id="hobelbank2">
+              <div class="container">
+                <img src="/img/impressionen/hobelbank_küche.jpg" alt="Küche">
+                <img src="/img/impressionen/hobelbank_nah.jpg" alt="Nahaufnahme Hobelbank">
+              </div>
+            </div>
+            <div class="mySlides slide_fade" id="hobelbank3">
+              <div class="container">
+                <img src="/img/impressionen/hobelbank_längst.jpg" alt="Hobelbank">
+              </div>
+            </div>
+
+            <div class="mySlides slide_fade" id="outdoorküche">
+              <div class="container">
+                <img src="/img/impressionen/kletterhaus.jpg" alt="Kletterhaus">
+                <p class="mainText">Die Aufgabe:
+                  <br>Umnutzung einer von Buchenhecke gerahmten Gartenecke. Das Kletterhaus aus Kindertagen hat ausgedient. Die Familie wünscht sich einen Platz für schöne, gemeinsame Stunden.
+                  <br>
+                  <br>Die Idee:
+                  <br>Heimischer Wesersandstein fasst den Ort ein, Weserkies schafft Biergarten-Atmosphäre. Aus Beton-U-Profilen und einer Akazienküchenarbeitsplatte wird einfach, aber wirkungsvoll eine Outdoorküche installiert. Neben einem großen Grill mit Seitenbrenner kann ebenfalls auf zwei Induktionsplatten gekocht werden. Moritz und Jette backen nun anstatt Sandkuchen im Kletterhaus leckere Variationen auf dem Pizzastein. Besonders abends wird es am großen Teak-Esstisch nebenan gemütlich und unter der Solar-Lichterkette kann man bis lange in die Nacht hinein Karten spielen...</p>
+                  <div id="balkenLinks"></div>
+                  <div id="balkenRechts"></div>
+              </div>
+            </div>
+            <div class="mySlides slide_fade" id="outdoorküche2">
+              <div class="container">
+                <img src="/img/impressionen/outdoor_grill.jpg" alt="Grill">
+                <img src="/img/impressionen/outdoor_küchenblock.jpg" alt="Outdoorküchenblock">
+                <img src="/img/impressionen/outdoor_utensilo.jpg" alt="Outdoor-utensilo">
+              </div>
+            </div>
+            <div class="mySlides slide_fade" id="outdoorküche3">
+              <div class="container">
+                <img src="/img/impressionen/outdoorküche_weitblick.jpg" alt="Outdoorküche Weitblick">
+              </div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="slide_prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="slide_next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
         </div>
       </div>
     </div>
@@ -50,4 +131,6 @@
     <p><a href="datenschutz-impressum.html">Impressum</a></p>
     <p><a href="datenschutz-impressum.html">Datenschutz</a></p>
   </div>
+
+  <script src="/js/kunst.js" charset="utf-8"></script>
 </body>

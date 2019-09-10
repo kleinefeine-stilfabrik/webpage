@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Kleine feine Stilfabrik</title>
+  <link rel="shortcut icon" href="img/shortcut.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <img id="logo" src="img/logo.png" alt="Logo">
+    <ul>
+      <li><a href="index.html"><p class="element">Home</p></a></li>
+      <li><a href="profil.html"><p class="element">Profil</p></a></li>
+      <li><a href="beratung.html"><p class="element">Beratung</p></a></li>
+      <li><p id="activeNav" class="element">Impressionen</p></li>
+      <li><a href="kunst.html"><p class="element">Kunstwerkstatt</p></a></li>
+      <li><a href="geschenke.html"><p class="element">Geschenke</p></a></li>
+      <li><a href="kontakt.html"><p class="element">Kontakt</p></a></li>
+    </ul>
+  </div>
+
+  <div class="content content_impressionen">
+    <div id="feather">
+      <div id="feather-img"></div>
+      <div class="sprueche">
+        <p>Kleinigkeiten</p>
+        <p>machen die Summe</p>
+        <p>des Lebens aus.</p>
+        <p class="author">(Charles Dickens)</p>
+      </div>
+    </div>
+
+    <div class="textbox">
+      <div class="text">
+        <div class="impressionen-wip">
+          <p>IM</p>
+          <p>PRES</p>
+          <p>SION</p>
+          <p>EN</p>
+        </div>
+        <div class="impressionen-wip-2">
+          <p>Diese Seite ist für Sie in Arbeit.</p>
+          <p>Bilder folgen in Kürze.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p><a href="datenschutz-impressum.html">Impressum</a></p>
+    <p><a href="datenschutz-impressum.html">Datenschutz</a></p>
+  </div>
+</body>

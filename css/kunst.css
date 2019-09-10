@@ -145,3 +145,48 @@
     }
   }
 }
+
+
+/* Karten */
+
+.slide_fade.karte .karten {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+.slide_fade.karte.bigger .karten {
+  padding-bottom: 0;
+}
+.slide_fade.karte .header {
+  font-size: 20px;
+  color: white;
+}
+
+.slide_fade.karte img {
+  padding-top: 40px;
+  height: 200px;
+  width: 200px;
+}
+.slide_fade.karte.bigger .karten img {
+  padding-top: 0;
+  height: 275px;
+  width: 275px;
+}
+
+.slide_fade.karte img:first-child {
+  padding-left: 150px;
+  padding-right: 10px;
+}
+.slide_fade.karte img:last-child {
+  padding-right: 150px;
+  padding-left: 10px;
+}
+.slide_fade.karte.bigger img {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.slide_fade.karte .mehr-karten-link {
+  color: white;
+}

@@ -529,7 +529,7 @@ body {
   height: 275px;
 }
 
-.content_geschenke #special-action {
+.content_geschenke #special-action, .content_kontakt #special-action {
   border-bottom: 1px gray solid;
   padding: 10px;
   text-align: center;
@@ -538,7 +538,7 @@ body {
 .contact {
   width: 50%;
   font-size: 1.6em;
-  margin: 200px 0 0 150px;
+  margin: 100px 0 0 150px;
   /* top: 200px; */
   /* left: 150px; */
 }
@@ -595,9 +595,9 @@ body {
 
 
 
-.content_impressionen .text {
-  height: 790px;
-}
+/* .content_impressionen .text { */
+  /* height: 790px; */
+/* } */
 
 .impressionen-wip-2 {
   font-size: 1.5em;
