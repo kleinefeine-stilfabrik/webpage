@@ -1,3 +1,29 @@
+.slideimages {
+  margin-top: 1.3cm;
+  height: auto!important;
+}
+.slideimage_container {
+  height: 100%;
+}
+
+
+.slideimage_container .geschenke_beschreibung, .slideimage_container .geschenke_beschreibung_2 {
+  //background-color: #fff;
+  padding: 10px;
+  border: 1px gray solid;
+  position: relative;
+  margin-top: 20px;
+  /* height: 221px; */
+}
+
+.slideimage_container .geschenke_beschreibung_2 p:nth-last-child(1), .slideimage_container .geschenke_beschreibung_2 p:nth-last-child(2) {
+  font-size: 0.7em;
+}
+
+/* .slideimage_container .geschenke_beschreibung, .slideimage_container .geschenke_beschreibung_2 {
+  height: 275px;
+} */
+
 @media only screen and (max-width: 1050px) {
   .sprueche {
     top: 425px;

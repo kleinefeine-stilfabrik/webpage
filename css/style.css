@@ -459,7 +459,8 @@ body {
   /* border: 1px gray solid; */
   border: 1px #777 solid;
   position: relative;
-  top: 10%;
+  /* top: 10%; */
+  margin-top: 15px;
 }
 
 .slideimage_container .profil_beschreibung p {
@@ -490,15 +491,6 @@ body {
   background-position: top;
 }
 
-.slideimage_container .geschenke_beschreibung, .slideimage_container .geschenke_beschreibung_2 {
-  //background-color: #fff;
-  padding: 10px;
-  border: 1px gray solid;
-  position: relative;
-  top: 7.5%;
-  height: 221px;
-}
-
 .content_geschenke .slideimage_container {
   margin-top: 10px;
   height: 350px;
@@ -514,25 +506,11 @@ body {
   font-size: 1.2em;
 }
 
-.slideimage_container .geschenke_beschreibung_2 p:nth-last-child(1), .slideimage_container .geschenke_beschreibung_2 p:nth-last-child(2) {
-  font-size: 0.7em;
-}
-
 .slideimage_container .geschenke_beschreibung #header, .slideimage_container .geschenke_beschreibung_2 #header {
   text-transform: uppercase;
   font-size: 1.4em;
   font-weight: 100;
   //text-align: left;
-}
-
-.slideimage_container .geschenke_beschreibung, .slideimage_container .geschenke_beschreibung_2 {
-  height: 275px;
-}
-
-.content_geschenke #special-action, .content_kontakt #special-action {
-  border-bottom: 1px gray solid;
-  padding: 10px;
-  text-align: center;
 }
 
 .contact {
