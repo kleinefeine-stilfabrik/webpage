@@ -135,6 +135,27 @@
 #bruchhausen2 .container, #bruchhausen3 .container, #bruchhausen4 .container {
   justify-content: space-around;
 }
+#sauna .mainText {
+  color: white;
+  margin-left: 15px;
+  max-width: 450px;
+}
+#sauna #balkenLinks {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  background-color: #4F0D0F;
+}
+#sauna #balkenRechts {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  background-color: #C08036;
+}
+
+#sauna2 .container, #sauna3 .container, #sauna4 .container {
+  justify-content: space-around;
+}
 
 #hobelbank .mainText {
   color: white;
