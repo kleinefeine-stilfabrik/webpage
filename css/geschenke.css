@@ -16,7 +16,8 @@
   /* height: 221px; */
 }
 
-.slideimage_container .geschenke_beschreibung_2 p:nth-last-child(1), .slideimage_container .geschenke_beschreibung_2 p:nth-last-child(2) {
+.slideimage_container .geschenke_beschreibung_2 p:nth-last-child(1) {
+  margin-top: 5px;
   font-size: 0.7em;
 }
 

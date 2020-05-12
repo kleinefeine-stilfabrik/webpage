@@ -4,6 +4,13 @@
   text-align: center;
 }
 
+#qr {
+  width: 20vmin;
+  position: absolute;
+  top: 150px;
+  right: 5vw;
+}
+
 @media only screen and (max-width: 1300px) {
   .sprueche {
     top: 425px;

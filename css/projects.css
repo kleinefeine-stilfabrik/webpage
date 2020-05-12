@@ -1,0 +1,270 @@
+.text > #mainText {
+  margin: 10px;
+  text-align: center;
+  padding: 80px 0;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+
+.slideshow-background {
+  padding: 40px;
+  /* padding-bottom: 60px; */
+  margin: 20px auto 0 auto;
+  background: #666;
+  height: 400px;
+  width: 800px;
+}
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  /* width: 100%; */
+  /* height: 400px; */
+  max-height: 400px;
+  object-fit: contain;
+  /* filter: blur(1px); */
+  /* transition: filter 1s; */
+}
+
+/*.mySlides img:hover {
+  filter: blur(0);
+} */
+/* Next & previous buttons */
+.slide_prev, .slide_next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.slide_next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slide_prev:hover, .slide_next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+/* .slide_text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}*/
+
+/* Fading animation */
+.slide_fade {
+  -webkit-animation-name: slide_fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: slide_fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes slide_fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes slide_fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+
+.slide_fade .container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+#bruchhausen .mainText {
+  color: white;
+  margin-left: 15px;
+  max-width: 450px;
+}
+#bruchhausen #balkenLinks {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  background-color: rgb(49, 91, 113);
+}
+#bruchhausen #balkenRechts {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  background-color: rgb(114, 88, 58);
+}
+
+#bruchhausen2 .container, #bruchhausen3 .container, #bruchhausen4 .container {
+  justify-content: space-around;
+}
+#sauna .mainText {
+  color: white;
+  margin-left: 15px;
+  max-width: 450px;
+}
+#sauna #balkenLinks {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  background-color: #4F0D0F;
+}
+#sauna #balkenRechts {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  background-color: #C08036;
+}
+
+#sauna2 .container, #sauna3 .container, #sauna4 .container {
+  justify-content: space-around;
+}
+
+#hobelbank .mainText {
+  color: white;
+  margin-left: 15px;
+  max-width: 450px;
+}
+#hobelbank #balkenLinks {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  background-color: rgb(60, 36, 26);
+}
+#hobelbank #balkenRechts {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  background-color: rgb(191, 192, 194);
+}
+
+
+#hobelbank2 .container, #hobelbank3 .container {
+  justify-content: space-around;
+}
+#hobelbank3 .container img {
+  width: 100%;
+}
+
+
+#outdoorküche .mainText {
+  color: white;
+  margin-left: 15px;
+  max-width: 450px;
+}
+#outdoorküche #balkenLinks {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  /* background-color: rgb(96, 157, 22); */
+  background-color: rgb(55, 103, 26);
+}
+#outdoorküche #balkenRechts {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  background-color: rgb(25, 24, 22);
+}
+
+#outdoorküche2 .container, #outdoorküche3 .container {
+  justify-content: space-around;
+}
+#outdoorküche2 .container {
+  justify-content: space-between;
+}
+#outdoorküche3 .container img {
+  width: 100%;
+}
+
+#badezimmer_bruchhausen .mainText {
+  color: white;
+  margin-left: 15px;
+  max-width: 450px;
+}
+#badezimmer_bruchhausen #balkenLinks {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  /* background-color: rgb(96, 157, 22); */
+  background-color: #B692C1;
+}
+#badezimmer_bruchhausen #balkenRechts {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  background-color: rgb(25, 24, 22);
+}
+#badezimmer_bruchhausen2 p {
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+#badezimmer_bruchhausen2 .container {
+  display: flex;
+  flex-direction: column;
+}
+
+#wc_bruchhausen .mainText {
+  color: white;
+  margin-left: 15px;
+  max-width: 450px;
+}
+#wc_bruchhausen #balkenLinks {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  /* background-color: rgb(96, 157, 22); */
+  background-color: rgb(25, 24, 22);
+}
+#wc_bruchhausen #balkenRechts {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  background-color: #EFAEA5;
+}
+#wc_bruchhausen2 p {
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+#wc_bruchhausen2 .container {
+  display: flex;
+  flex-direction: column;
+}

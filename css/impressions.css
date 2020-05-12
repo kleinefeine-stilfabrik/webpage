@@ -114,101 +114,137 @@
 }
 
 
-#bruchhausen .mainText {
+#tafeln .mainText {
   color: white;
   margin-left: 15px;
   max-width: 450px;
 }
-#bruchhausen #balkenLinks {
+#tafeln #balkenLinks {
   margin-left: 15px;
   height: 400px;
   width: 75px;
-  background-color: rgb(49, 91, 113);
+  background-color: #f8f8f8;
 }
-#bruchhausen #balkenRechts {
+#tafeln #balkenRechts {
   margin-left: 15px;
   height: 400px;
   width: 75px;
   background-color: rgb(114, 88, 58);
 }
 
-#bruchhausen2 .container, #bruchhausen3 .container, #bruchhausen4 .container {
+#tafel2 .container {
   justify-content: space-around;
 }
-#sauna .mainText {
-  color: white;
-  margin-left: 15px;
-  max-width: 450px;
-}
-#sauna #balkenLinks {
-  margin-left: 15px;
-  height: 400px;
-  width: 75px;
-  background-color: #4F0D0F;
-}
-#sauna #balkenRechts {
-  margin-left: 15px;
-  height: 400px;
-  width: 75px;
-  background-color: #C08036;
-}
-
-#sauna2 .container, #sauna3 .container, #sauna4 .container {
-  justify-content: space-around;
-}
-
-#hobelbank .mainText {
-  color: white;
-  margin-left: 15px;
-  max-width: 450px;
-}
-#hobelbank #balkenLinks {
-  margin-left: 15px;
-  height: 400px;
-  width: 75px;
-  background-color: rgb(60, 36, 26);
-}
-#hobelbank #balkenRechts {
-  margin-left: 15px;
-  height: 400px;
-  width: 75px;
-  background-color: rgb(191, 192, 194);
-}
-
-
-#hobelbank2 .container, #hobelbank3 .container {
-  justify-content: space-around;
-}
-#hobelbank3 .container img {
+#tafel3 .container img {
   width: 100%;
 }
-
-
-#outdoorküche .mainText {
+#tafel4 .container {
+  justify-content: space-around;
+}
+#tafel5 .container {
+  display: flex;
+  flex-direction: column;
+}
+#tafel5 .container p {
+  color: white;
+  text-align: center;
+}
+#tafel5 .container img {
+  display: block;
+  width: 80%;
+  margin: 2vh auto;
+}
+#träume .mainText {
   color: white;
   margin-left: 15px;
   max-width: 450px;
 }
-#outdoorküche #balkenLinks {
+#träume #balkenLinks {
   margin-left: 15px;
   height: 400px;
   width: 75px;
-  /* background-color: rgb(96, 157, 22); */
-  background-color: rgb(55, 103, 26);
+  /* background-color: #829544; */
+  background-color: #333319;
 }
-#outdoorküche #balkenRechts {
+#träume #balkenRechts {
   margin-left: 15px;
   height: 400px;
   width: 75px;
-  background-color: rgb(25, 24, 22);
+  background-color: #083B96;
+  /* background-color: #781617; */
 }
 
-#outdoorküche2 .container, #outdoorküche3 .container {
+#träume2 .container {
   justify-content: space-around;
 }
-#outdoorküche2 .container {
-  justify-content: space-between;
-}
-#outdoorküche3 .container img {
+#träume3 .container img {
   width: 100%;
+}
+#träume4 .container {
+  justify-content: space-around;
+}
+#träume5 .container img {
+  width: 100%;
+}
+#träume6 .container {
+  display: flex;
+  flex-direction: column;
+}
+#träume6 .container p {
+  color: white;
+  text-align: center;
+}
+#träume6 .container img {
+  display: block;
+  width: 80%;
+  margin: 2vh auto;
+}
+
+#temperamente .mainText {
+  color: white;
+  margin-left: 15px;
+  max-width: 450px;
+}
+#temperamente #balkenLinks {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  background-color: #eee;
+}
+#temperamente #balkenRechts {
+  margin-left: 15px;
+  height: 400px;
+  width: 75px;
+  background-color: #222;
+}
+
+
+#temperamente2 .container {
+  justify-content: space-around;
+}
+#temperamente3 .container img {
+  width: 100%;
+}
+#temperamente4 .container {
+  justify-content: space-around;
+}
+#temperamente5 .container img {
+  width: 100%;
+}
+#temperamente6 .container {
+  justify-content: space-around;
+}
+
+#temperamente7 .container {
+  display: flex;
+  flex-direction: column;
+}
+#temperamente7 .container p {
+  color: white;
+  text-align: center;
+}
+#temperamente7 .container img {
+  display: block;
+  width: 80%;
+  margin: 2vh auto;
 }

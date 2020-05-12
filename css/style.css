@@ -61,7 +61,7 @@ body {
   /* margin: -10px 0 0 -20px; */ */
 }
 .navbar .element {
-  margin: 0px 10px;
+  /* margin: 0px 10px; */
   /* color: black; */
   padding: 3px 10px;
   //border: 4px black solid;
@@ -217,8 +217,27 @@ body {
   100% {transform: translateY(220px) rotate(-20deg);}
   /* 100% {transform: translateY(100%) rotate(-20deg);} */
 }
+.content_celebrating #feather #feather-img {
+  //transform: translateY(60%) rotate(20deg);
+  animation-name: feather_celebrating;
+}
+@keyframes feather_celebrating {
+  0% {}
+  100% {transform: translateY(270px) translateX(20px) rotate(-45deg);}
+  /* 100% {transform: translateY(100%) rotate(-20deg);} */
+}
 
-.content_impressionen #feather #feather-img {
+.content_impressions #feather #feather-img {
+  //transform: translateY(60%) rotate(20deg);
+  animation-name: feather_impressions;
+}
+@keyframes feather_impressions {
+  0% {}
+  100% {transform: translateY(220px) rotate(-20deg);}
+  /* 100% {transform: translateY(100%) rotate(-20deg);} */
+}
+
+.content_projects #feather #feather-img {
   //transform: translateY(100%) rotate(-30deg);
   animation-name: feather_impressionen;
 }
@@ -301,12 +320,12 @@ body {
   position: relative;
   width: 90%;
   right: -9%;
-  bottom: -50%;
+  bottom: -45%;
   transition: 0.2s;
 }
 
 .content_home .text-active {
-  bottom: -5%;
+  bottom: -2.5%;
 }
 
 .content_home .text ul li {
@@ -378,7 +397,7 @@ body {
   /* margin-bottom: 1.25em; */
 }
 .content_beratung .textbox .text p:nth-last-child(2) {
-  margin-top: 15px;
+  margin-top: 75px;
   /* margin-top: 1.25em; */
 }
 
@@ -389,6 +408,39 @@ body {
 }
 
 .content_beratung #feder-beratung:hover {
+  filter: grayscale(0);
+}
+
+.content_celebrating .textbox {
+  position: relative;
+  text-align: center;
+  //top: 120px;
+  font-size: 1.2em;
+}
+
+.content_celebrating .textbox .text {
+  position: relative;
+  //top: -120px;
+}
+
+.content_celebrating .textbox .text p:nth-child(2) {
+  margin-top: 10px;
+  /* margin-top: 1em; */
+  margin-bottom: 15px;
+  /* margin-bottom: 1.25em; */
+}
+.content_celebrating .textbox .text p:nth-last-child(2) {
+  margin-top: 50px;
+  /* margin-top: 1.25em; */
+}
+
+.content_celebrating #feder-celebrating {
+  width: 100%;
+  filter: grayscale(.9);
+  transition: all 500ms;
+}
+
+.content_celebrating #feder-celebrating:hover {
   filter: grayscale(0);
 }
 /*
@@ -496,7 +548,9 @@ body {
   height: 350px;
   width: 350px;
 }
-
+.slideimage_container .geschenke_beschreibung, .slideimage_container .geschenke_beschreibung_2 {
+  min-height: 275px;
+}
 .slideimage_container .geschenke_beschreibung p {
   font-size: 1.2em;
   //text-align: justify;
@@ -573,7 +627,7 @@ body {
 
 
 
-/* .content_impressionen .text { */
+/* .content_projects .text { */
   /* height: 790px; */
 /* } */
 
@@ -640,4 +694,10 @@ body {
       }
     }
   }
+}
+
+
+#instagram, #facebook  {
+  font-size: 20px;
+  margin-right: 15px;
 }

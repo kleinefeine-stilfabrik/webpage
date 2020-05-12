@@ -169,7 +169,7 @@ body {
   /* 100% {transform: translateY(100%) rotate(-20deg);} */
 }
 
-.content_impressionen #feather #feather-img {
+.content_projects #feather #feather-img {
   //transform: translateY(100%) rotate(-30deg);
   animation-name: feather_impressionen;
 }
@@ -534,7 +534,7 @@ body {
 
 
 
-.content_impressionen .text {
+.content_projects .text {
   height: 790px;
 }
 
