@@ -2,6 +2,8 @@ var coll = document.getElementsByClassName("collapsible");
 
 for (let i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
+    const moodboard = document.querySelector('#moodboard');
+    moodboard.classList.add('ausblenden')
     let active_collapsible = document.getElementsByClassName("collapsible-active");
     for(let e = 0; e < active_collapsible.length; e++) {
       active_collapsible[e].click();
